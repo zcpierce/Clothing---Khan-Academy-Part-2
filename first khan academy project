@@ -1,0 +1,13 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY,  name TEXT, color TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO clothing VALUES (1, "shirt", "red", 2.99, 50);
+INSERT INTO clothing VALUES (2, "shorts", "green", 0.99, 95);
+INSERT INTO clothing VALUES (3, "hoodie", "blue", 2.99, 55);
+INSERT INTO clothing VALUES (4, "pants", "blue", 0.99, 50);
+INSERT INTO clothing VALUES (5, "jacket", "black", 4.99, 65);
+INSERT INTO clothing VALUES (6, "shoes", "yellow", 3.25, 43);
+INSERT INTO clothing VALUES (7, "rain coat", "black", 2.99, 35);
+
+select price from clothing order by quantity;
+
+select price, sum(quantity) from clothing order by price
